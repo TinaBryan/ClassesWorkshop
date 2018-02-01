@@ -9,7 +9,7 @@ public class Main {
 
         // A class should do one thing
         // should handle one thing
-
+        Dog dog = new Dog();
 
     }
 
