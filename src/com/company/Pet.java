@@ -7,6 +7,7 @@ public class Pet {
     private String homeAddress;
     private int age;
     private char gender;
+    private boolean petSound;
 
     public String getOnerName() {
         return onerName;
@@ -46,5 +47,9 @@ public class Pet {
 
     public void setGender(char gender) {
         this.gender = gender;
+    }
+
+    protected String makeSound() {
+        return "Pets make no sound";
     }
 }

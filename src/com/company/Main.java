@@ -11,6 +11,8 @@ public class Main {
         // should handle one thing
         Dog dog = new Dog();
 
+        System.out.println(dog.makeSound());
+
     }
 
 }

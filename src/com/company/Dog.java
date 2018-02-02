@@ -11,9 +11,9 @@ public class Dog extends Pet {
 
     public Dog() {
 
-        System.out.println("What is your dog's name?");
+        System.out.println("What is your dog's name? ");
         setPetName(input.nextLine());
-        System.out.println("Does" + getPetName() + " like to take walks?");
+        System.out.println("Does " + getPetName() + " like to take walks? True or False");
         setLikesWalks(input.nextBoolean());
 
     }
@@ -40,6 +40,11 @@ public class Dog extends Pet {
 
     public void setCoatType(String coatType) {
         this.coatType = coatType;
+    }
+
+    @Override
+    protected String makeSound() {
+        return super.makeSound() + "But dogs bark";
     }
 
     public Scanner getInput() {
