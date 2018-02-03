@@ -2,16 +2,19 @@ package com.company;
 
 public class Main {
 
-    private String MyString;
+
 
     public static void main(String[] args) {
-	// write your code here
 
-        // A class should do one thing
-        // should handle one thing
-        Dog dog = new Dog();
+//        Dog dog = new Dog();
+//
+//        System.out.println(dog.makeSound());
 
-        System.out.println(dog.makeSound());
+        Cat cat = new Cat("Person", "Kitty", "124 main street", 5, 'F',
+                true, true, "White");
+
+        System.out.println(cat.makeSound());
+        System.out.println(cat.getGender());
 
     }
 

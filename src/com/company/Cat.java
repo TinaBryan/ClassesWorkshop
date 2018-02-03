@@ -1,11 +1,19 @@
 package com.company;
-import java.util.Scanner;
 
 public class Cat extends Pet {
 
     private boolean likesCatnip;
-    private boolean usesLitterBox;
+    private boolean usesLitterbox;
     private String furType;
+
+    public Cat(String ownerName, String petName, String homeAddress, int age, char gender, boolean likesCatnip, boolean usesLitterbox, String furType) {
+
+        super(ownerName, petName, homeAddress, age, gender);
+
+        this.likesCatnip = likesCatnip;
+        this.usesLitterbox = usesLitterbox;
+        this.furType = furType;
+    }
 
 
     public boolean isLikesCatnip() {
@@ -16,12 +24,12 @@ public class Cat extends Pet {
         this.likesCatnip = likesCatnip;
     }
 
-    public boolean isUsesLitterBox() {
-        return usesLitterBox;
+    public boolean isUsesLitterbox() {
+        return usesLitterbox;
     }
 
-    public void setUsesLitterBox(boolean usesLitterBox) {
-        this.usesLitterBox = usesLitterBox;
+    public void setUsesLitterbox(boolean usesLitterbox) {
+        this.usesLitterbox = usesLitterbox;
     }
 
     public String getFurType() {
@@ -34,6 +42,6 @@ public class Cat extends Pet {
 
     @Override
     protected String makeSound() {
-        return super.makeSound()  + "But cats meow";
+        return "MEOWWWWWW!!!!!!!!";
     }
 }

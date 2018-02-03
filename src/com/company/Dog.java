@@ -9,14 +9,23 @@ public class Dog extends Pet {
     private String coatType;
     private Scanner input = new Scanner(System.in);
 
-    public Dog() {
-
-        System.out.println("What is your dog's name? ");
-        setPetName(input.nextLine());
-        System.out.println("Does " + getPetName() + " like to take walks? True or False");
-        setLikesWalks(input.nextBoolean());
-
+    public Dog(String ownerName, String petName, String homeAddress, int age, char gender) {
+        super(ownerName, petName, homeAddress, age, gender);
     }
+
+    //    public Dog() {
+//        System.out.println("What is your dog's name?");
+//        setPetName(input.nextLine());
+//        System.out.println("Does " + getPetName() + " like to take walks? True or False");
+//        setLikesWalks(input.nextBoolean());
+//    }
+
+    /*
+    Create a method for each of the sub classes that handles the age of a pet.
+
+    Have this class return a string that says:
+    "Pet_NAME is PET_AGE  in human years and ____ in dog / cat years."
+     */
 
     public boolean isLikesWalks() {
         return likesWalks;
@@ -44,14 +53,6 @@ public class Dog extends Pet {
 
     @Override
     protected String makeSound() {
-        return super.makeSound() + "But dogs bark";
-    }
-
-    public Scanner getInput() {
-        return input;
-    }
-
-    public void setInput(Scanner input) {
-        this.input = input;
+        return super.makeSound() + "BUT dogs bark";
     }
 }

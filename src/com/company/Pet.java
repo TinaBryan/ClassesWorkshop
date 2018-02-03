@@ -2,19 +2,26 @@ package com.company;
 
 public class Pet {
 
-    private String onerName;
+    private String ownerName;
     private String petName;
     private String homeAddress;
     private int age;
     private char gender;
-    private boolean petSound;
 
-    public String getOnerName() {
-        return onerName;
+    public Pet(String ownerName, String petName, String homeAddress, int age, char gender) {
+        this.ownerName = ownerName;
+        this.petName = petName;
+        this.homeAddress = homeAddress;
+        this.age = age;
+        this.gender = gender;
     }
 
-    public void setOnerName(String onerName) {
-        this.onerName = onerName;
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
     }
 
     public String getPetName() {
@@ -50,6 +57,8 @@ public class Pet {
     }
 
     protected String makeSound() {
-        return "Pets make no sound";
+
+        return "Pets make no sound.";
     }
+
 }
